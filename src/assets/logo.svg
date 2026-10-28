@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Minimal geometric monogram</title>
+  <desc>Muted olive and warm beige rounded geometric mark with a terracotta dot.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M198 141 V235 H271" stroke="#89896A" stroke-width="29"/>
+    <circle cx="313.5" cy="181.5" r="20.5" fill="#C88C6D" stroke="none"/>
+    <path d="M132.5 281.5 H199.5 V339.5 H245" stroke="#D0B99A" stroke-width="19"/>
+    <path d="M279 283.5 L349.5 354" stroke="#89896A" stroke-width="19"/>
+    <path d="M351.5 283.5 L280 354" stroke="#89896A" stroke-width="19"/>
+  </g>
+</svg>
