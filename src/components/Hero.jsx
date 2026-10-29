@@ -33,12 +33,11 @@ function Hero() {
                         <p>HELLO ,I'M</p>
                         <h1>Layla Srour</h1>
                         <p>Computer Science Graduate</p>
-                        <p>Passionate about building modern web applications,
-                            solving problems with clen code, and creating
-                            meaningful digital experience.
+                        <p>Where algorithms meet aesthetics.
+                            Combining analytical thinking, clean code, and thoughtful design to build meaningful digital experiences.
                         </p>
 
-                        <div className="row g-2 mt-3">
+                        <div className="row g-2 ">
                             <div className="col-12 col-sm-auto">
                                 <button
                                     className="btn rounded-5 text-light w-100"
