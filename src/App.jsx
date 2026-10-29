@@ -4,12 +4,14 @@ import NavBar from './components/Nav_bar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import Project from './components/Projects'
+import About from './components/About'
 function App() {
     return (
         <BrowserRouter basename="/layla_portfolio">
             <div className="main">
                 <NavBar />
                 <Hero/>
+                <About/>
 
                 <Routes>
                     <Route path="/" element={<Main />} />

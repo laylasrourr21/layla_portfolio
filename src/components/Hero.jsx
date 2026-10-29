@@ -39,8 +39,30 @@ function Hero() {
                     <div className="col-lg-5 col-sm-12 d-flex justify-content-center align-items-center ">
                         <div className='row d-flex justify-content-center align-items-center'>
                             <div className='col-12 d-flex justify-content-center align-items-center'>
-                                <img src={logo} className='img-responsive' style={{ height: "70%", width: "60%" }}>
-                                </img>
+
+                                <div
+                                    className="d-flex justify-content-center align-items-center"
+                                    style={{
+                                        width: "min(90%, 200px)",
+                                        aspectRatio: "4 / 5",
+                                        borderRadius: "50% 40% 25% 50%",
+                                        backgroundColor: "#f3eee2",
+                                        overflow: "hidden",
+                                    }}
+                                >
+                                    <img
+                                        src={logo}
+                                        alt="Layla Srour logo"
+                                        className="img-fluid"
+                                        style={{
+                                            width: "65%",
+                                            height: "auto",
+                                            objectFit: "contain",
+                                        }}
+                                    />
+                                </div>
+
+
 
                             </div>
                             <div className='col-12 d-flex justify-content-center align-items-center'>
