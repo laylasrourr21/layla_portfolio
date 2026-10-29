@@ -10,7 +10,7 @@ function App(){
     <NavBar/>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Main/>}></Route>
+      <Route path='/layla_portfolio/' element={<Main/>}></Route>
     
     </Routes>
     </BrowserRouter>

@@ -4,10 +4,10 @@ import '../styles/Nav.css'
 function NavBar() {
     return (
         <nav className="navbar navbar-expand-sm bg-transparent">
-            <div className="container-fluid justify-content-center">
+            <div className="container ">
 
                 {/* Logo */}
-                <a className="navbar-brand  me-5 pe-5 " href="/">
+                <a className="navbar-brand  ps-lg-5 ms-5" href="/">
                     <img
                         src={logo}
                         alt="Logo"
@@ -17,7 +17,7 @@ function NavBar() {
 
                 {/* Mobile toggle */}
                 <button
-                    className="navbar-toggler"
+                    className="navbar-toggler pe-lg-5 me-5"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar"
@@ -30,13 +30,13 @@ function NavBar() {
 
                 {/* Navigation links */}
                 <div
-                    className="collapse navbar-collapse flex-grow-0"
+                    className="collapse navbar-collapse pe-lg-5 me-5 flex-grow-0 justify-content-center"
                     id="collapsibleNavbar"
                 >
                     <ul className="gap-3 navbar-nav justify-content-end g-5">
                         <li className="nav-item">
                             <a className={`nav-link ${window.location.pathname === "/layla_portfolio/" ? "active" : ""
-                                }`} href="/">Home</a>
+                                }`} href="/layla_portfolio/">Home</a>
                         </li>
 
 
