@@ -1,8 +1,9 @@
+import logo from '../assets/logo1.png'
 function Hero() {
     return (
         <>
             <div className="container   mt-5">
-                <div className="row mt-5">
+                <div className="row mt-5 pe-4 ps-4 pb-4">
                     <div className="col-lg-1 ">
                     </div>
                     <div className="col-lg-5 col-sm-12 ">
@@ -35,8 +36,9 @@ function Hero() {
                         </div>
 
                     </div>
-                    <div className="col-lg-5 col-sm-12 ">
-
+                    <div className="col-lg-5 col-sm-12 d-flex justify-content-center align-items-center ">
+                         <img src={logo} className='img-responsive' style={{height:"70%",width:"60%"}}>
+                         </img>
                     </div>
                     <div className="col-lg-1 ">
 
