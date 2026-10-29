@@ -37,8 +37,17 @@ function Hero() {
 
                     </div>
                     <div className="col-lg-5 col-sm-12 d-flex justify-content-center align-items-center ">
-                         <img src={logo} className='img-responsive' style={{height:"70%",width:"60%"}}>
+                        <div className='row d-flex justify-content-center align-items-center'>
+                                <div className='col-12 d-flex justify-content-center align-items-center'>
+                                     <img src={logo} className='img-responsive' style={{height:"70%",width:"60%"}}>
                          </img>
+
+                                </div>
+                                <div className='col-12 d-flex justify-content-center align-items-center'>
+                                           <p>CODE . BUILD . IMPROVE</p>
+                                </div>
+                        </div>
+                        
                     </div>
                     <div className="col-lg-1 ">
 
