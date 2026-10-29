@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import Project from './components/Projects'
 import About from './components/About'
+import Skills from './components/Skills';
+import Footer from './components/Footer';
 function App() {
     return (
         <BrowserRouter basename="/layla_portfolio">
@@ -12,6 +14,9 @@ function App() {
                 <NavBar />
                 <Hero/>
                 <About/>
+                <Skills/>
+                <Footer/>
+
 
                 <Routes>
                     <Route path="/" element={<Main />} />

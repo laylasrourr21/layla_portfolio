@@ -1,0 +1,105 @@
+.skills-section {
+  position: relative;
+  overflow: hidden;              /* clips the circles at the screen edges */
+  padding-block: 3rem;
+  background: #f1ede0;
+}
+
+.skills-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section label with a short line after it */
+.skills-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: #5e6346;
+}
+.skills-title::after {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background: rgba(94, 99, 70, 0.4);
+}
+
+/* Row of skills: 10 across on desktop */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-item {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.skill-tile {
+  width: clamp(52px, 5vw, 66px);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #e8e5d2;
+  color: #5e6346;
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.skill-item:hover .skill-tile {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(94, 99, 70, 0.18);
+}
+
+.skill-name {
+  font-size: 0.8rem;
+  color: #5b5b52;
+  text-align: center;
+}
+
+/* Decorative circles */
+.skills-circle-left {
+  position: absolute;
+  left: -40px;
+  bottom: -30px;
+  width: 110px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #e9e5d4;
+  z-index: 0;
+}
+.skills-circle-right {
+  position: absolute;
+  right: -90px;
+  top: -10%;
+  width: 280px;
+  height: 130%;
+  border-radius: 50%;
+  background: #f5f1e6;
+  z-index: 0;
+}
+
+/* Tablet: 5 per row */
+@media (max-width: 991px) {
+  .skill-item { width: 20%; }
+}
+
+/* Mobile: 3 per row (last row centers itself) */
+@media (max-width: 575px) {
+  .skills-section { padding-block: 2.5rem; }
+  .skill-item { width: 33.333%; }
+  .skills-circle-right { display: none; }
+}
