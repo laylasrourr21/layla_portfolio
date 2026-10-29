@@ -51,3 +51,60 @@
   .hero-logo { width: 42%; }
   .hero-tagline { letter-spacing: 0.25em; }
 }
+.hero-section {
+  position: relative;
+  overflow: hidden;          /* clips the leaves and arc at the screen edges */
+  padding-block: 1rem;
+       /* warm page background */
+}
+
+/* keep your content above the decorations */
+.hero-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Thin arc line on the left */
+.hero-arc {
+  position: absolute;
+  left: -140px;
+  bottom: 6%;
+  width: 240px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(94, 99, 70, 0.35);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Large soft circle at the bottom right (as in your mockup) */
+.hero-bg-circle {
+  position: absolute;
+  right: -8%;
+  bottom: -35%;
+  width: 28vw;
+  max-width: 420px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f1ebdc;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Leaves hugging the right edge */
+.hero-leaves {
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+  width: clamp(70px, 9vw, 150px);
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Mobile: keep it subtle so it never covers text */
+@media (max-width: 575px) {
+  .hero-arc { width: 160px; left: -100px; }
+  .hero-leaves { width: 70px; bottom: 2%; opacity: 0.6; }
+  .hero-bg-circle { display: none; }
+}
