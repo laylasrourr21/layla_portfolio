@@ -7,7 +7,7 @@ function NavBar() {
             <div className="container ">
 
                 {/* Logo */}
-                <a className="navbar-brand  ps-lg-5 ms-5" href="/">
+                <a className="navbar-brand  ps-lg-5 ms-lg-5" href="/">
                     <img
                         src={logo}
                         alt="Logo"
@@ -17,7 +17,7 @@ function NavBar() {
 
                 {/* Mobile toggle */}
                 <button
-                    className="navbar-toggler pe-lg-5 me-5"
+                    className="navbar-toggler pe-lg-5 me-lg-5"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar"
