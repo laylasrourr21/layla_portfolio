@@ -11,18 +11,6 @@
 }
 
 /* soft organic shape behind the tiles */
-/* .main1::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -8%;
-  width: min(640px, 60vw);
-  aspect-ratio: 1 / 0.9;
-  transform: translateY(-50%);
-  border-radius: 58% 42% 52% 48% / 48% 52% 48% 52%;
-  background: linear-gradient(145deg, #f1ebdc 0%, #f5f0e4 70%, #f8f4ea 100%);
-  z-index: 0;
-} */
 
 /* ---------- Left: statement ---------- */
 .mind-label {

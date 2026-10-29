@@ -1,27 +1,27 @@
-import { FaProjectDiagram, FaPalette, FaCompass, FaSeedling } from 'react-icons/fa'
+import { FaBrain, FaCode, FaSuperscript, FaPuzzlePiece } from 'react-icons/fa'
 import '../styles/About.css'
 
 /* Edit the four traits here */
 const traits = [
     {
-        icon: FaProjectDiagram,
-        title: 'Analytical mind',
-        text: 'Finding patterns. Untangling complexity.',
+        icon: FaBrain,
+        title: 'Logical thinking',
+        text: 'Reasoning through problems, one step at a time.',
     },
     {
-        icon: FaPalette,
-        title: 'Creative eye',
-        text: 'Turning ideas into thoughtful experiences.',
+        icon: FaCode,
+        title: 'Code with purpose',
+        text: 'Turning abstract logic into working solutions.',
     },
     {
-        icon: FaCompass,
-        title: 'Curious spirit',
-        text: 'Exploring questions beyond the obvious.',
+        icon: FaSuperscript,
+        title: 'Mathematical mind',
+        text: 'Finding patterns, relationships, and structure.',
     },
     {
-        icon: FaSeedling,
-        title: 'Always evolving',
-        text: 'Learning, experimenting, improving.',
+        icon: FaPuzzlePiece,
+        title: 'Problem solving',
+        text: 'Connecting the pieces until everything clicks.',
     },
 ]
 

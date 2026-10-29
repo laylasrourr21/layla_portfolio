@@ -78,7 +78,7 @@
 }
 
 /* Large soft circle at the bottom right (as in your mockup) */
-.hero-bg-circle {
+/* .hero-bg-circle {
   position: absolute;
   right: -8%;
   bottom: -35%;
@@ -89,7 +89,7 @@
   background: #f1ebdc;
   pointer-events: none;
   z-index: 0;
-}
+} */
 
 /* Leaves hugging the right edge */
 .hero-leaves {
