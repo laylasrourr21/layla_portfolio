@@ -1,4 +1,5 @@
 import logo from '../assets/logo1.png'
+import '../styles/Hero.css'
 function Hero() {
     return (
         <>
@@ -40,34 +41,17 @@ function Hero() {
                         <div className='row d-flex justify-content-center align-items-center'>
                             <div className='col-12 d-flex justify-content-center align-items-center'>
 
-                                <div
-                                    className="d-flex justify-content-center align-items-center"
-                                    style={{
-                                        width: "min(90%, 200px)",
-                                        aspectRatio: "4 / 5",
-                                        borderRadius: "50% 40% 25% 50%",
-                                        backgroundColor: "#f3eee2",
-                                        overflow: "hidden",
-                                    }}
-                                >
-                                    <img
-                                        src={logo}
-                                        alt="Layla Srour logo"
-                                        className="img-fluid"
-                                        style={{
-                                            width: "65%",
-                                            height: "auto",
-                                            objectFit: "contain",
-                                        }}
-                                    />
-                                </div>
+                               <div className="hero-art">
+    <div className="hero-blob" />
+    <div className="hero-circle" />
+    <img src={logo} alt="Layla Srour logo" className="hero-logo" />
+</div>
 
 
 
                             </div>
                             <div className='col-12 d-flex justify-content-center align-items-center'>
-                                <p>CODE . BUILD . IMPROVE</p>
-                            </div>
+                            <p className="hero-tagline">CODE . BUILD . IMPROVE</p> </div>
                         </div>
 
                     </div>

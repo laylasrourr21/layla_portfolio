@@ -1,15 +1,53 @@
-.hero-oval::after {
-  content: "";
+.hero-art {
+  position: relative;
+  width: min(100%, 460px);
+  aspect-ratio: 1 / 0.9;
+  margin-inline: auto;
+}
+
+/* Big soft organic blob */
+.hero-blob {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 35%;
-  height: 30%;
-  background: linear-gradient(
-    135deg,
-    rgba(243, 238, 226, 0) 0%,
-    rgba(243, 238, 226, 0.65) 60%,
-    rgba(243, 238, 226, 0) 100%
-  );
-  pointer-events: none;
+  inset: 0;
+  border-radius: 58% 42% 52% 48% / 48% 52% 48% 52%;
+  background: linear-gradient(145deg, #f1ebdc 0%, #f5f0e4 60%, #f8f4ea 100%);
+}
+
+/* Small overlapping circle on the right */
+.hero-circle {
+  position: absolute;
+  width: 26%;
+  aspect-ratio: 1;
+  right: -4%;
+  top: 38%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #f7f1e6, #eee3d2);
+}
+
+/* Logo centered inside the blob */
+.hero-logo {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  width: 38%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-tagline {
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  color: #5e6346;
+  margin-top: 1rem;
+}
+
+/* Tablet and mobile: slightly smaller art, logo a bit larger inside it */
+@media (max-width: 991px) {
+  .hero-art { width: min(90%, 380px); }
+}
+@media (max-width: 575px) {
+  .hero-art { width: min(85%, 300px); }
+  .hero-logo { width: 42%; }
+  .hero-tagline { letter-spacing: 0.25em; }
 }
