@@ -1,23 +1,24 @@
 
 import logo from '../assets/logo1.png';
 import '../styles/Nav.css'
+import { Link } from 'react-router-dom';
 function NavBar() {
     return (
         <nav className="navbar navbar-expand-sm bg-transparent">
             <div className="container ">
 
                 {/* Logo */}
-                <a className="navbar-brand  ps-lg-5 ms-lg-5" href="/">
+                <Link className="navbar-brand  ps-lg-5 ms-lg-5 ms-sm-4" to="/">
                     <img
                         src={logo}
                         alt="Logo"
                         style={{ width: '40px' }}
                     />
-                </a>
+                </Link>
 
                 {/* Mobile toggle */}
                 <button
-                    className="navbar-toggler pe-lg-5 me-lg-5"
+                    className="navbar-toggler pe-lg-5 me-lg-5 ms-sm-4"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar"
@@ -35,8 +36,8 @@ function NavBar() {
                 >
                     <ul className="gap-3 navbar-nav justify-content-end g-5">
                         <li className="nav-item">
-                            <a className={`nav-link ${window.location.pathname === "/layla_portfolio/" ? "active" : ""
-                                }`} href="/layla_portfolio/">Home</a>
+                            <Link className={`nav-link ${window.location.pathname === "/layla_portfolio/" ? "active" : ""
+                                }`} to="/">Home</Link>
                         </li>
 
 
@@ -44,17 +45,17 @@ function NavBar() {
 
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/dash">About</a>
+                            <Link className="nav-link" to="/">About</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact">Skills</a>
+                            <Link className="nav-link" to="/">Skills</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact">Projects</a>
+                            <Link className="nav-link" to="/">Projects</Link>
                         </li>
                         <li className="nav-item me-4 pe-5">
-                            <a className="nav-link" href="#contact">Contacts</a>
+                            <Link className="nav-link" to="/">Contacts</Link>
                         </li>
                         <li className='nav-item '>
 
