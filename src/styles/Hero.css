@@ -54,7 +54,7 @@
 .hero-section {
   position: relative;
   overflow: hidden;          /* clips the leaves and arc at the screen edges */
-  padding-block: 1rem;
+  /* padding-block: 1rem; */
        /* warm page background */
 }
 

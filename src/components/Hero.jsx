@@ -12,7 +12,7 @@ function Hero() {
             
 
             {/* YOUR EXISTING CONTENT, unchanged */}
-            <div className="container   mt-5">
+            <div className="container  ">
                 <div className="row mt-5 pe-4 ps-4 pb-4 gap-3">
                     <div className="col-lg-1 ">
                     </div>
