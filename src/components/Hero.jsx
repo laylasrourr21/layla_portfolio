@@ -2,7 +2,7 @@ import logo from '../assets/logo1.png'
 import '../styles/Hero.css'
 function Hero() {
     return (
-        <section className="hero-section">
+        <section className="hero-section mt-5">
 
             {/* Left: thin arc line */}
             <div className="hero-arc" aria-hidden="true" />

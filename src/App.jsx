@@ -1,39 +1,18 @@
-
 import './styles/App.css';
-import NavBar from './components/Nav_bar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Hero from './components/Hero';
-import Project from './components/Projects'
-import About from './components/About'
-import Skills from './components/Skills';
-import Footer from './components/Footer';
+import Home from './Home';
+import Detailed from './components/Projects_detailed';
+import NavBar from './components/Nav_bar';
 function App() {
-    return (
-        <BrowserRouter basename="/layla_portfolio">
-            <div className="main">
-                <NavBar />
-                <Hero/>
-                <About/>
-                <Skills/>
-                <Project/>
-                <Footer/>
-
-
-                <Routes>
-                    <Route path="/" element={<Main />} />
-                    <Route path='/projects' element={<Project/>}></Route>
-                </Routes>
-            </div>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter basename="/layla_portfolio">
+        <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:id" element={<Detailed />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
-
-function Main() {
-    return (
-        <>
-            {/* Your homepage sections will go here */}
-        </>
-    );
-}

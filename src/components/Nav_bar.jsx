@@ -1,10 +1,11 @@
 
 import logo from '../assets/logo1.png';
 import '../styles/Nav.css'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link, Element } from 'react-scroll';
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-sm bg-transparent">
+        <nav className="fixed-top navbar navbar-expand-sm  mb-5" style={{backgroundColor:"transparent"}}>
             <div className="container ">
 
                 {/* Logo */}
@@ -15,6 +16,7 @@ function NavBar() {
                         style={{ width: '40px' }}
                     />
                 </Link>
+
 
                 {/* Mobile toggle */}
                 <button
@@ -35,27 +37,63 @@ function NavBar() {
                     id="collapsibleNavbar"
                 >
                     <ul className="gap-3 navbar-nav justify-content-end g-5">
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className={`nav-link ${window.location.pathname === "/layla_portfolio/" ? "active" : ""
                                 }`} to="/">Home</Link>
-                        </li>
+                        </li> */}
 
 
 
 
 
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">About</Link>
+                            <Link
+                            // offset={-70} 
+                                activeClass="active"
+                                to="homeSection"
+                                spy={true}
+                                smooth={true}
+                                // Matches navbar height to prevent covering text
+                                duration={500}
+                                className="nav-link" >Home</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Skills</Link>
+                            <Link
+                             activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                // Matches navbar height to prevent covering text
+                                duration={500}
+                             className="nav-link" >About</Link>
                         </li>
+
                         <li className="nav-item">
-                            <Link className="nav-link" to="/projcts">Projects</Link>
+                            <Link
+                             activeClass="active"
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                // Matches navbar height to prevent covering text
+                                duration={500}
+                            
+                            className="nav-link" >Skills</Link>
                         </li>
-                        <li className="nav-item me-4 pe-5">
-                            <Link className="nav-link" to="/">Contacts</Link>
+
+                        <li className="nav-item">
+                            <Link
+                             activeClass="active"
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                // Matches navbar height to prevent covering text
+                                duration={500}
+                            className="nav-link" >Projects</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/#contact">Contacts</Link>
                         </li>
                         <li className='nav-item '>
 

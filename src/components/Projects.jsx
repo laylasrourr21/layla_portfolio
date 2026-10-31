@@ -1,7 +1,7 @@
 import { FaArrowRight } from 'react-icons/fa'
 import '../styles/Projects.css'
 import projects from './ProjectData'
-
+import { Link } from 'react-router-dom'
 function Project() {
     return (
         <section className="projects-section" id="projects">
@@ -14,9 +14,9 @@ function Project() {
                         {/* Header */}
                         <div className="projects-head">
                             <h2 className="projects-title">FEATURED PROJECTS</h2>
-                            <a href="/projects" className="projects-all">
+                            <Link to="/projects/0" className="projects-all">
                                 View All Projects <FaArrowRight aria-hidden="true" />
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Cards */}
@@ -50,7 +50,7 @@ function Project() {
                                             <div className="project-top">
                                                 <h3 className="project-name">{project.name}</h3>
                                                 <span className="project-arrow" aria-hidden="true">
-                                                    <FaArrowRight />
+                                                    <Link to="/projects/{project.id}" ><FaArrowRight /></Link>
                                                 </span>
                                             </div>
 
