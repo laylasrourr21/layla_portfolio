@@ -1,7 +1,7 @@
 
 import logo from '../assets/logo1.png';
 import '../styles/Nav.css'
-// import { Link } from 'react-router-dom';
+import { Link as L} from 'react-router-dom';
 import { Link, Element } from 'react-scroll';
 function NavBar() {
     return (
@@ -9,13 +9,13 @@ function NavBar() {
             <div className="container ">
 
                 {/* Logo */}
-                <Link className="navbar-brand ms-4  ps-lg-5 ps-sm-5 ms-lg-5 ms-sm-5" to="/">
+                <L className="navbar-brand ms-4  ps-lg-5 ps-sm-5 ms-lg-5 ms-sm-5" to="/">
                     <img
                         src={logo}
                         alt="Logo"
                         style={{ width: '40px' }}
                     />
-                </Link>
+                </L>
 
 
                 {/* Mobile toggle */}
