@@ -5,7 +5,7 @@ import { Link as L} from 'react-router-dom';
 import { Link, Element } from 'react-scroll';
 function NavBar() {
     return (
-        <nav className="fixed-top navbar navbar-expand-sm  mb-5" style={{backgroundColor:"transparent"}}>
+        <nav className="fixed-top navbar navbar-expand-sm  mb-5" style={{backgroundColor:"#f6f2e8"}}>
             <div className="container ">
 
                 {/* Logo */}
